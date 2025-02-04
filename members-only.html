@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members-Only - WS Hack Club</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { background-color: #333; color: white; padding: 10px 0; }
+        nav a { margin: 0 10px; color: white; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 20px; }
+        footer { margin-top: 20px; color: #666; font-size: 0.9rem; }
+    </style>
+    <script>
+        function checkPassword() {
+            const password = prompt("Enter the password:");
+            if (password === "WSHACKCLUB") {
+                document.getElementById('content').style.display = 'block';
+            } else {
+                alert("Incorrect password!");
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+    <header>
+        <h1>WS Hack Club</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="members.html">Members</a>
+            <a href="members-only.html">Members Only</a>
+        </nav>
+    </header>
+    <main>
+        <div id="content" style="display: none;">
+            <h2>Members-Only Information</h2>
+            <p><strong>Next Meeting:</strong> February 10, 2025</p>
+            <p><strong>Leader Contact:</strong> Benjamin Graetz - <a href="mailto:benjamingraetz@icloud.com">Email me!</a></p>
+            <p><strong>Leader 2 Contact:</strong> Kris Devgan - <a href="mailto:kris.devgan@henleyhs.sa.edu.au">Email me!</a></p>
+            <p>Check out the Toolbox <a href:"toolbox.hackclub.com">Right here!</a> for all the projects and events Hack Club runs.</p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 WS Hack Club. All rights reserved.
+    </footer>
+</body>
+</html>
